@@ -9,6 +9,7 @@ public class _010_Baby {
         double decibels;
         int numPoops = 0;
         Baby[] siblings;
+        static int numberBabiesMade = 0;
 
         public Baby(String name, boolean isMale, double weight, double decibels, int numPoops) {
             this.name = name;
@@ -16,6 +17,7 @@ public class _010_Baby {
             this.weight = weight;
             this.decibels = decibels;
             this.numPoops = numPoops;
+            this.numberBabiesMade++;
         }
 
         void poop() {
@@ -49,6 +51,7 @@ public class _010_Baby {
         baby01.poop();
         System.out.println(baby01.name + " pooped " + baby01.numPoops + " times, and " +
                 baby02.name + " only " + baby02.numPoops + " times!");
+        System.out.println(("We have " + Baby.numberBabiesMade + " babies so far!"));
     }
 
 }
