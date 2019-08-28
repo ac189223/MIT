@@ -10,7 +10,7 @@ public class _040_SetExample {
         strings.add("Eugene");
         strings.add("Adam");
 
-        System.out.println(strings.size()); 
+        System.out.println(strings.size());
         System.out.println(strings.first());
         System.out.println(strings.last());
         strings.remove("Eugene");
