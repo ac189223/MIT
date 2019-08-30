@@ -1,7 +1,6 @@
 package IntroductionToProgrammingInJava._05_AccessControlClassScopePackagesJavaAPI;
 
-import java.awt.Color;
-import java.awt.Graphics;
+import java.awt.*;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -45,10 +44,15 @@ public class _063_DrawGraphics {
             box.draw(surface);
         }
 
-//        surface.drawRect(150, 200, 150, 50);
-//        surface.setColor(Color.yellow);
-//        surface.fillRect(150, 200, 150, 50);
-//        surface.setColor(Color.magenta);
-//        surface.drawOval(100, 100, 50, 150);
+        surface.fillRect (150, 100, 25, 40);
+        surface.fillOval (40, 40, 25, 10);
+        surface.setColor (Color.YELLOW);
+        surface.drawString ("Mr. And Mrs. Smith", 200, 10);
+
+        surface.drawRect(150, 200, 150, 50);
+        surface.setColor(Color.yellow);
+        surface.fillRect(150, 200, 150, 50);
+        surface.setColor(Color.magenta);
+        surface.drawOval(100, 100, 50, 150);
     }
 }
